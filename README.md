@@ -57,16 +57,6 @@ Built using **React**, **FastAPI**, **Groq LLM**, and **Mermaid.js**.
 
 ---
 
-# 🎥 Demo
-
-> *(Optional)*
-
-<p align="center">
-  <img src="screenshots/demo.gif" width="900"/>
-</p>
-
----
-
 # 🛠️ Tech Stack
 
 ## Frontend
@@ -291,7 +281,6 @@ This project is licensed under the MIT License.
 **Hansiddh G**
 
 - GitHub: https://github.com/hansiddhgurram
-- LinkedIn: *(Add your LinkedIn URL here)*
 
 ---
 
