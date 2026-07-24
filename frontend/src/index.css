@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #2563eb;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* ---------------- Prompt ---------------- */
+
+.prompt-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.prompt-container input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.prompt-container button {
+    padding: 15px 28px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.prompt-container button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.prompt-container button:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+/* ---------------- Output ---------------- */
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.output section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+.output h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.output p {
+    line-height: 1.7;
+}
+
+.output ul {
+    padding-left: 20px;
+}
+
+.output li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* ---------------- Services ---------------- */
+
+.service-card {
+    background: #eef4ff;
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 8px;
+    color: #1d4ed8;
+}
+
+/* ---------------- Table ---------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+/* ---------------- Mermaid ---------------- */
+
+.mermaid-container {
+    overflow-x: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---------------- Loading ---------------- */
+
+.loading-container {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border: 5px solid #ddd;
+    border-top: 5px solid #2563eb;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+}
+
+.loading-container p {
+    margin-top: 15px;
+    color: #666;
+}
+
+/* ---------------- Error ---------------- */
+
+.error {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fee2e2;
+    color: #b91c1c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ---------------- Animation ---------------- */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 768px) {
+
+    .prompt-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
